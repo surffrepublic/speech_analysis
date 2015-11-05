@@ -38,6 +38,7 @@ Please fork and do a pull request when you've created a feature that you want to
 - [] Final Presentation - Due: Dec 8-10
 #### For assignment:
 - [] Create logo
+
 #### Jayson:
 - [] Create seed data
 
