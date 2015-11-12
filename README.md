@@ -40,7 +40,7 @@ Please fork and do a pull request when you've created a feature that you want to
 - [] Create logo
 
 #### Jayson:
-- [] Create seed data
+- [] Create seed data file with existing data provided by client
 
 #### Future Work:
 - [] Ensure only users that client allows can sign up for speech app
