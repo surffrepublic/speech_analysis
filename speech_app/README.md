@@ -11,6 +11,7 @@ Final assignment for Web Architecture and Cloud Computing class at UNM (ECE 495/
 * Meghana Sampelli (meghana.sampelli2811@gmail.com)
 
 ## Instructions
+**Be sure you're running ruby version 2.2.3 for best results!**
 
 Clone the repo:
 ```bash
