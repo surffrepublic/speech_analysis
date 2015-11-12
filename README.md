@@ -29,7 +29,7 @@ Please fork and do a pull request when you've created a feature that you want to
 ## Todo
 #### General:
 - [x] Initial meeting with client Amy Neel - Due Nov 5
-- [] Project Management Plan - Due: Nov 10
+- [x] Project Management Plan - Due: Nov 10
 - [] Initial Requirements Document - Due: Nov 12
 - [] Gantt Chart - Due: Nov 12
 - [] Initial prototype - Due: Nov 17
