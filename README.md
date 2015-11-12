@@ -42,3 +42,6 @@ Please fork and do a pull request when you've created a feature that you want to
 #### Jayson:
 - [] Create seed data
 
+#### Future Work:
+- [] Ensure only users that client allows can sign up for speech app
+- [] Temporary table to allow users to save incomplete submissions for speakers.
