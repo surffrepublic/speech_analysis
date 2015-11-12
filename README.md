@@ -2,7 +2,13 @@
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
-Final assignment for Web Architecture and Cloud Computing class at UNM (ECE 495/595) by Jayson Grace (jayson.e.grace@gmail.com), Jeffrey Gordon (jeffreyrgordon@gmail.com), Amber Rutherford (anhruthe@gmail.com), Harish Dara (harish225@unm.edu), Nicole Kim (nkim0912@salud.unm.edu) and Meghana Sampelli (meghana.sampelli2811@gmail.com).
+Final assignment for Web Architecture and Cloud Computing class at UNM (ECE 495/595) by:
+* Jayson Grace (jayson.e.grace@gmail.com)
+* Jeffrey Gordon (jeffreyrgordon@gmail.com)
+* Amber Rutherford (anhruthe@gmail.com)
+* Harish Dara (harish225@unm.edu)
+* Nicole Kim (nkim0912@salud.unm.edu) 
+* Meghana Sampelli (meghana.sampelli2811@gmail.com)
 
 ## Instructions
 
