@@ -2,7 +2,7 @@
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
-Final assignment for Web Architecture and Cloud Computing class at UNM (ECE 495/595) by Jayson Grace (jayson.e.grace@gmail.com), and others (TBA).
+Final assignment for Web Architecture and Cloud Computing class at UNM (ECE 495/595) by Jayson Grace (jayson.e.grace@gmail.com), Jeffrey Gordon (jeffreyrgordon@gmail.com), Amber Rutherford (anhruthe@gmail.com), Harish Dara (harish225@unm.edu), Nicole Kim (nkim0912@salud.unm.edu) and Meghana Sampelli (meghana.sampelli2811@gmail.com).
 
 ## Instructions
 
@@ -30,8 +30,8 @@ Please fork and do a pull request when you've created a feature that you want to
 #### General:
 - [x] Initial meeting with client Amy Neel - Due Nov 5
 - [x] Project Management Plan - Due: Nov 10
-- [] Initial Requirements Document - Due: Nov 12
-- [] Gantt Chart - Due: Nov 12
+- [x] Initial Requirements Document - Due: Nov 12
+- [x] Gantt Chart - Due: Nov 12
 - [] Initial prototype - Due: Nov 17
 - [] Prototype 2 - Due: Nov 24
 - [] Prototype 3 - Due: Dec 1
@@ -40,6 +40,8 @@ Please fork and do a pull request when you've created a feature that you want to
 - [] Create logo
 
 #### Jayson:
+- [] Generate rails app
+- [] Generate Scaffolds
 - [] Create seed data file with existing data provided by client
 
 #### Future Work:
