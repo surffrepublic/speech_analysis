@@ -24,3 +24,6 @@ rails destroy scaffold country
 rails destroy scaffold native_language
 # Destroy scaffold for english country residence
 rails destroy scaffold english_country_residence
+
+# Destroy phoneme scaffold
+rails destroy scaffold phoneme 

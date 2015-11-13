@@ -11,7 +11,74 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151113053737) do
+ActiveRecord::Schema.define(version: 20151113073556) do
+
+  create_table "cities", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "countries", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "english_country_residences", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "native_languages", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "phonemes", force: :cascade do |t|
+    t.integer  "base"
+    t.string   "actual"
+    t.string   "diacritic"
+    t.integer  "sequence"
+    t.integer  "speaker_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "phonemes", ["speaker_id"], name: "index_phonemes_on_speaker_id"
+
+  create_table "speakers", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "city_id"
+    t.integer  "state_id"
+    t.integer  "country_id"
+    t.integer  "native_language_id"
+    t.integer  "other_languages"
+    t.integer  "age"
+    t.integer  "gender"
+    t.integer  "english_onset"
+    t.integer  "learning_method"
+    t.integer  "english_country_residence_id"
+    t.integer  "length_english_residence"
+    t.integer  "user_id"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+  end
+
+  add_index "speakers", ["city_id"], name: "index_speakers_on_city_id"
+  add_index "speakers", ["country_id"], name: "index_speakers_on_country_id"
+  add_index "speakers", ["english_country_residence_id"], name: "index_speakers_on_english_country_residence_id"
+  add_index "speakers", ["native_language_id"], name: "index_speakers_on_native_language_id"
+  add_index "speakers", ["state_id"], name: "index_speakers_on_state_id"
+  add_index "speakers", ["user_id"], name: "index_speakers_on_user_id"
+
+  create_table "states", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

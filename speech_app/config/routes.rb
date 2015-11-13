@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+  resources :phonemes
+  resources :english_country_residences
+  resources :native_languages
+  resources :countries
+  resources :states
+  resources :cities
+  resources :speakers
   devise_for :users
   get 'login/index'
   resources :home

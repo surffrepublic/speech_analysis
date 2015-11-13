@@ -1,0 +1,23 @@
+<%= simple_form_for(@speaker) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.association :city %>
+    <%= f.association :state %>
+    <%= f.association :country %>
+    <%= f.association :native_language %>
+    <%= f.input :other_languages %>
+    <%= f.input :age %>
+    <%= f.input :gender %>
+    <%= f.input :english_onset %>
+    <%= f.input :learning_method %>
+    <%= f.association :english_country_residence %>
+    <%= f.input :length_english_residence %>
+    <%= f.association :user %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
