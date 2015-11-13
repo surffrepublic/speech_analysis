@@ -38,9 +38,10 @@
         <td><%= speaker.english_country_residence %></td>
         <td><%= speaker.length_english_residence %></td>
         <td><%= speaker.user %></td>
-        <td><%= link_to 'Show', speaker %></td>
-        <td><%= link_to 'Edit', edit_speaker_path(speaker) %></td>
-        <td><%= link_to 'Destroy', speaker, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', speaker, class: 'btn btn-primary btn-xs' %></td>
+        <td><%= link_to 'Edit', edit_speaker_path(speaker), class: 'btn btn-info btn-xs' %></td>
+        <td><%= link_to 'Destroy', speaker, method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn
+        btn-danger btn-xs' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -48,4 +49,6 @@
 
 <br>
 
-<%= link_to 'New Speaker', new_speaker_path %>
+<%= link_to new_speaker_path, class: 'btn btn-success' do %>
+  <i class="glyphicon glyphicon-plus"></i> New Speaker
+<% end %>
