@@ -45,22 +45,24 @@ Please fork and do a pull request when you've created a feature that you want to
 - [] Final Presentation - Due: Dec 8-10
 
 #### For assignment:
-- [] Ensure instructions for coding side are up-to-date
+- [] Ensure instructions for coding side are up-to-date - XX
 - [] Get UNM logo
 - [] Supplement Replace Speech App in upper left corner with UNM logo
-- [] Create interface for inputting Phoneme Data
-- [] Ensure Phoneme is associated with a user
-- [] Ensure input file is being displayed properly
-- [] Grab Phoneme image and display
-- [] Display table for phoneme translations
+- [] Create interface for inputting Phoneme Data - XX
+- [] Ensure Speaker is associated with a user
+- [] Ensure input file is being displayed properly - XX
+- [] Grab Phoneme image and display - XX
+- [] Display table for phoneme translations - XX
 - [] Create instructions
 - [] Spec tests for ruby code
 - [] Spec tests for Javascript code
 - [] Implement concept of administrative account
-- [] Ensure aesthetics of page are good
-- [] Determine way to create new options to add to drop down boxes (ex. state, country, etc.)
+- [] Ensure aesthetics of page are good - XX
+- [] Determine way to create new options to add to drop down boxes (ex. state, country, etc.) - XX
 - [] Remove unnecessary components to project
 - [] Ensure no TODO's remain in code comments
+- [] Bug search - XX
+- [] Steal UNM favicon
 
 #### Jayson:
 - [x] Create initial project skeleton
@@ -71,7 +73,7 @@ Please fork and do a pull request when you've created a feature that you want to
 - [x] Create seed data file with existing data provided by client
 - [x] Fix flash notices
 - [] Create model validations
-- [] Update Edit User page with bootstrap buttons for aesthetics and consistency
+- [x] Update Edit User page with bootstrap button
 - [] Get queries from client
 - [] Implement logic to separate views for different users
 - [] Push product to Heroku
