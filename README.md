@@ -59,6 +59,7 @@ Please fork and do a pull request when you've created a feature that you want to
 - [] Ensure aesthetics of page are good
 - [] Determine way to create new options to add to drop down boxes (ex. state, country, etc.)
 - [] Remove unnecessary components to project
+- [] Ensure no TODO's remain in code comments
 
 #### Jayson:
 - [x] Create initial project skeleton
