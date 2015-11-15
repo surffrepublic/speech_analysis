@@ -63,6 +63,7 @@ Please fork and do a pull request when you've created a feature that you want to
 - [] Ensure no TODO's remain in code comments
 - [] Bug search - XX
 - [] Steal UNM favicon
+- [] Create nice page for login/signup - see https://stark-woodland-7238.herokuapp.com/ for contextual example
 
 #### Jayson:
 - [x] Create initial project skeleton
