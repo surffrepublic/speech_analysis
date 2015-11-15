@@ -50,4 +50,3 @@ gem 'haml'
 gem 'bootstrap-sass'
 # Used to ensure proper vendor prefixes to CSS code
 gem 'autoprefixer-rails'
-

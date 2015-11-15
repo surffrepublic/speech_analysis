@@ -1,12 +1,13 @@
 <ul class="nav nav-tabs" role="tablist">
   <li class="active"><%= link_to 'View Phoneme Data', phonemes_path %></li>
   <li><%= link_to 'Enter Phoneme Data', new_phoneme_path %></li>
+  <li><%= link_to 'View Speakers', speakers_path %></li>
   <li><%= link_to 'Create Speaker', new_speaker_path %></li>
 </ul>
 
 <h1>Listing Phonemes</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Base</th>
@@ -25,10 +26,11 @@
         <td><%= phoneme.actual %></td>
         <td><%= phoneme.diacritic %></td>
         <td><%= phoneme.sequence %></td>
-        <td><%= phoneme.speaker %></td>
-        <td><%= link_to 'Show', phoneme %></td>
-        <td><%= link_to 'Edit', edit_phoneme_path(phoneme) %></td>
-        <td><%= link_to 'Destroy', phoneme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= phoneme.speaker.name %></td>
+        <td><%= link_to 'Show', phoneme, class: 'btn btn-primary btn-xs' %></td>
+        <td><%= link_to 'Edit', edit_phoneme_path(phoneme), class: 'btn btn-info btn-xs' %></td>
+        <td><%= link_to 'Destroy', phoneme, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn
+        btn-danger btn-xs'  %></td>
       </tr>
     <% end %>
   </tbody>

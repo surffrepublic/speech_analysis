@@ -2,16 +2,16 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :base %>
-    <%= f.input :actual %>
-    <%= f.input :diacritic %>
-    <%= f.input :sequence %>
-    <%= f.association :speaker %>
+    <%= f.input :base, required: true %>
+    <%= f.input :actual, required: true %>
+    <%= f.input :diacritic, required: true %>
+    <%= f.input :sequence, required: true %>
+    <%= f.association :speaker, required: true %>
   </div>
 
   <div class="actions form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <%= f.submit %>
-    </div>
+    <%= f.submit %>
   </div>
+  <!--TODO: Figure out how to make submit button look like this button:-->
+  <!--<%= button_tag "Create Phoneme", type: 'submit', class: "btn btn-success" %>-->
 <% end %>

@@ -1,6 +1,7 @@
 <ul class="nav nav-tabs" role="tablist">
   <li><%= link_to 'View Phoneme Data', phonemes_path %></li>
   <li class="active"><%= link_to 'Enter Phoneme Data', new_phoneme_path %></li>
+  <li><%= link_to 'View Speakers', speakers_path %></li>
   <li><%= link_to 'Create Speaker', new_speaker_path %></li>
 </ul>
 
@@ -8,4 +9,6 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Back', phonemes_path %>
+<%= link_to phonemes_path, class: "btn btn-danger btn-xs" do %>
+  <i class="glyphicon glyphicon-arrow-left">Phonemes</i>
+<% end %>
