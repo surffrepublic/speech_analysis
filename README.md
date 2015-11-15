@@ -43,17 +43,22 @@ Please fork and do a pull request when you've created a feature that you want to
 - [] Prototype 2 - Due: Nov 24
 - [] Prototype 3 - Due: Dec 1
 - [] Final Presentation - Due: Dec 8-10
+
 #### For assignment:
 - [] Ensure instructions for coding side are up-to-date
 - [] Get UNM logo
 - [] Supplement Replace Speech App in upper left corner with UNM logo
 - [] Create interface for inputting Phoneme Data
+- [] Ensure input file is being displayed properly
+- [] Grab Phoneme image and display
+- [] Display table for phoneme translations
 - [] Create instructions
 - [] Spec tests for ruby code
 - [] Spec tests for Javascript code
 - [] Implement concept of administrative account
 - [] Ensure aesthetics of page are good
 - [] Determine way to create new options to add to drop down boxes (ex. state, country, etc.)
+- [] Remove unnecessary components to project
 
 #### Jayson:
 - [x] Create initial project skeleton
@@ -68,6 +73,16 @@ Please fork and do a pull request when you've created a feature that you want to
 - [] Implement logic to separate views for different users
 - [] Push product to Heroku
 
-#### Future Work:
+#### Amber:
+
+#### Jeffrey:
+
+#### Harish:
+
+#### Nicole:
+
+#### Meghana:
+
+#### Future Work (May not be encompassed in assignment):
 - [] Ensure only users that client allows can sign up for speech app
 - [] Temporary table to allow users to save incomplete submissions for speakers.
