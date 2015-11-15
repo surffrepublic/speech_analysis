@@ -1,3 +1,9 @@
+<ul class="nav nav-tabs" role="tablist">
+  <li><%= link_to 'View Phoneme Data', phonemes_path %></li>
+  <li class="active"><%= link_to 'Enter Phoneme Data', new_phoneme_path %></li>
+  <li><%= link_to 'Create Speaker', new_speaker_path %></li>
+</ul>
+
 <h1>New Phoneme</h1>
 
 <%= render 'form' %>

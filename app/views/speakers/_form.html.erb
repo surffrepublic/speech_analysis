@@ -2,22 +2,23 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.association :city %>
+    <%= f.input :name, required: true %>
+    <%= f.association :city, required: true %>
     <%= f.association :state %>
-    <%= f.association :country %>
-    <%= f.association :native_language %>
-    <%= f.input :other_languages %>
-    <%= f.input :age %>
-    <%= f.input :gender %>
-    <%= f.input :english_onset %>
-    <%= f.input :learning_method %>
+    <%= f.association :country, required: true %>
+    <%= f.association :native_language, required: true %>
+    <%= f.input :other_languages, label: '# Other Languages Known: ', required: true %>
+    <%= f.input :age, required: true %>
+    <%= f.input :gender, as: :select, collection: Speaker.genders.keys.to_a, required: true %>
+    <%= f.input :english_onset, required: true %>
+    <%= f.input :learning_method, as: :select, collection: Speaker.learning_methods.keys.to_a, required: true %>
     <%= f.association :english_country_residence %>
-    <%= f.input :length_english_residence %>
-    <%= f.association :user %>
+    <%= f.input :length_english_residence, required: true %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <div class="actions form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit %>
+    </div>
   </div>
 <% end %>

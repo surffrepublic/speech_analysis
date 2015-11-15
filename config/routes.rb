@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :cities
+  resources :speakers
   resources :phonemes
   resources :english_country_residences
   resources :native_languages
@@ -13,7 +15,7 @@ Rails.application.routes.draw do
 
   devise_scope :user do
     authenticated :user do
-      root 'home#index', as: "authenticated_root"
+      root 'phonemes#index', as: "authenticated_root"
     end
     unauthenticated :user do
       root to: "devise/sessions#new", as: :unauthenticate_root

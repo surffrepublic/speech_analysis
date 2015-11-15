@@ -1,4 +1,8 @@
-<p id="notice"><%= notice %></p>
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><%= link_to 'View Phoneme Data', phonemes_path %></li>
+  <li><%= link_to 'Enter Phoneme Data', new_phoneme_path %></li>
+  <li><%= link_to 'Create Speaker', new_speaker_path %></li>
+</ul>
 
 <h1>Listing Phonemes</h1>
 
@@ -32,4 +36,6 @@
 
 <br>
 
-<%= link_to 'New Phoneme', new_phoneme_path %>
+<%= link_to new_phoneme_path, class: 'btn btn-success' do %>
+  <i class="glyphicon glyphicon-plus"></i> New Phoneme
+<% end %>
