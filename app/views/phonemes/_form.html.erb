@@ -1,0 +1,17 @@
+<%= simple_form_for(@phoneme) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :base, required: true %>
+    <%= f.input :actual, required: true %>
+    <%= f.input :diacritic, required: true %>
+    <%= f.input :sequence, required: true %>
+    <%= f.association :speaker, required: true %>
+  </div>
+
+  <div class="actions form-group">
+    <%= f.submit %>
+  </div>
+  <!--TODO: Figure out how to make submit button look like this button:-->
+  <!--<%= button_tag "Create Phoneme", type: 'submit', class: "btn btn-success" %>-->
+<% end %>

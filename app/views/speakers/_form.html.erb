@@ -1,0 +1,24 @@
+<%= simple_form_for(@speaker) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name, required: true %>
+    <%= f.association :city, required: true %>
+    <%= f.association :state %>
+    <%= f.association :country, required: true %>
+    <%= f.association :native_language, required: true %>
+    <%= f.input :other_languages, label: '# Other Languages Known: ', required: true %>
+    <%= f.input :age, required: true %>
+    <%= f.input :gender, as: :select, collection: Speaker.genders.keys.to_a, required: true %>
+    <%= f.input :english_onset, required: true %>
+    <%= f.input :learning_method, as: :select, collection: Speaker.learning_methods.keys.to_a, required: true %>
+    <%= f.association :english_country_residence %>
+    <%= f.input :length_english_residence, required: true %>
+  </div>
+
+  <div class="actions form-group">
+    <%= f.submit %>
+  </div>
+  <!--TODO: Figure out how to make submit button look like this button:-->
+  <!--<%= button_tag "Create Speaker", type: 'submit', class: "btn btn-success" %>-->
+<% end %>
