@@ -9,44 +9,48 @@
 
 <table class="table">
   <thead>
-    <tr>
-      <th>Name</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Country</th>
-      <th>Native language</th>
-      <th>Other languages</th>
-      <th>Age</th>
-      <th>Gender</th>
-      <th>English onset</th>
-      <th>Learning method</th>
-      <th>English country residence</th>
-      <th>Length english residence</th>
-      <th colspan="3"></th>
-    </tr>
+  <tr>
+    <th>Name</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>Native language</th>
+    <th>Other languages</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>English onset</th>
+    <th>Learning method</th>
+    <th>English country residence</th>
+    <th>Length english residence</th>
+    <th colspan="3"></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @speakers.each do |speaker| %>
-      <tr>
-        <td><%= speaker.name %></td>
-        <td><%= speaker.city.name %></td>
-        <td><%= speaker.state.name %></td>
-        <td><%= speaker.country.name %></td>
-        <td><%= speaker.native_language.name %></td>
-        <td><%= speaker.other_languages %></td>
-        <td><%= speaker.age %></td>
-        <td><%= speaker.gender %></td>
-        <td><%= speaker.english_onset %></td>
-        <td><%= speaker.learning_method %></td>
+  <% @speakers.each do |speaker| %>
+    <tr>
+      <td><%= speaker.name %></td>
+      <td><%= speaker.city.name %></td>
+      <td><%= speaker.state.name %></td>
+      <td><%= speaker.country.name %></td>
+      <td><%= speaker.native_language.name %></td>
+      <td><%= speaker.other_languages %></td>
+      <td><%= speaker.age %></td>
+      <td><%= speaker.gender %></td>
+      <td><%= speaker.english_onset %></td>
+      <td><%= speaker.learning_method %></td>
+      <% if !speaker.english_country_residence.nil? %>
         <td><%= speaker.english_country_residence.name %></td>
-        <td><%= speaker.length_english_residence %></td>
-        <td><%= link_to 'Show', speaker, class: 'btn btn-primary btn-xs' %></td>
-        <td><%= link_to 'Edit', edit_speaker_path(speaker), class: 'btn btn-info btn-xs' %></td>
-        <td><%= link_to 'Destroy', speaker, method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn
+      <% else %>
+        <td><%= nil %></td>
+      <% end %>
+      <td><%= speaker.length_english_residence %></td>
+      <td><%= link_to 'Show', speaker, class: 'btn btn-primary btn-xs' %></td>
+      <td><%= link_to 'Edit', edit_speaker_path(speaker), class: 'btn btn-info btn-xs' %></td>
+      <td><%= link_to 'Destroy', speaker, method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn
         btn-danger btn-xs' %></td>
-      </tr>
-    <% end %>
+    </tr>
+  <% end %>
   </tbody>
 </table>
 

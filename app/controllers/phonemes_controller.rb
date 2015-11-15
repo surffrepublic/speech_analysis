@@ -28,9 +28,11 @@ class PhonemesController < ApplicationController
 
     respond_to do |format|
       if @phoneme.save
-        format.html { redirect_to @phoneme, notice: 'Phoneme was successfully created.' }
+        flash[:success] = 'Phoneme was successfully created.'
+        format.html { redirect_to @phoneme }
         format.json { render :show, status: :created, location: @phoneme }
       else
+        flash[:danger] = 'There was a problem creating the Phoneme.'
         format.html { render :new }
         format.json { render json: @phoneme.errors, status: :unprocessable_entity }
       end
@@ -42,9 +44,11 @@ class PhonemesController < ApplicationController
   def update
     respond_to do |format|
       if @phoneme.update(phoneme_params)
-        format.html { redirect_to @phoneme, notice: 'Phoneme was successfully updated.' }
+        flash[:success] = 'Phoneme was successfully updated.'
+        format.html { redirect_to @phoneme }
         format.json { render :show, status: :ok, location: @phoneme }
       else
+        flash[:danger] = 'There was a problem updating the Phoneme.'
         format.html { render :edit }
         format.json { render json: @phoneme.errors, status: :unprocessable_entity }
       end
@@ -56,19 +60,20 @@ class PhonemesController < ApplicationController
   def destroy
     @phoneme.destroy
     respond_to do |format|
-      format.html { redirect_to phonemes_url, notice: 'Phoneme was successfully destroyed.' }
+      flash[:success] = 'Phoneme was successfully destroyed.'
+      format.html { redirect_to phonemes_url }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_phoneme
-      @phoneme = Phoneme.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_phoneme
+    @phoneme = Phoneme.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def phoneme_params
-      params.require(:phoneme).permit(:base, :actual, :diacritic, :sequence, :speaker_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def phoneme_params
+    params.require(:phoneme).permit(:base, :actual, :diacritic, :sequence, :speaker_id)
+  end
 end

@@ -49,6 +49,7 @@ Please fork and do a pull request when you've created a feature that you want to
 - [] Get UNM logo
 - [] Supplement Replace Speech App in upper left corner with UNM logo
 - [] Create interface for inputting Phoneme Data
+- [] Ensure Phoneme is associated with a user
 - [] Ensure input file is being displayed properly
 - [] Grab Phoneme image and display
 - [] Display table for phoneme translations
@@ -68,7 +69,8 @@ Please fork and do a pull request when you've created a feature that you want to
 - [x] Implement authentication
 - [x] Add bootstrap to make interface easier to use
 - [x] Create seed data file with existing data provided by client
-- [] Fix flash notices
+- [x] Fix flash notices
+- [] Create model validations
 - [] Update Edit User page with bootstrap buttons for aesthetics and consistency
 - [] Get queries from client
 - [] Implement logic to separate views for different users

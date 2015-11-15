@@ -50,10 +50,12 @@
   <%= @speaker.learning_method %>
 </p>
 
-<p>
-  <strong>English country residence:</strong>
-  <%= @speaker.english_country_residence.name %>
-</p>
+<% if !@speaker.english_country_residence.nil? %>
+  <p>
+    <strong>English country residence:</strong>
+    <%= @speaker.english_country_residence.name %>
+  </p>
+<% end %>
 
 <p>
   <strong>Length english residence:</strong>
